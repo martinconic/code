@@ -1,6 +1,6 @@
 const std = @import("std");
 
-pub fn main() !void {
+fn r1() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
     const allocator = gpa.allocator();
 
@@ -27,4 +27,49 @@ pub fn main() !void {
     }
 
     std.debug.print("{d}\n", .{lines});
+}
+
+fn r2() !void {
+    const file = try std.fs.cwd().openFile("../input.txt", .{});
+    defer file.close();
+
+    var lines: usize = 0;
+
+    var buf_reader = std.io.bufferedReader(file.reader());
+    var in_stream = buf_reader.reader();
+
+    var buf: [1024]u8 = undefined;
+    while (try in_stream.readUntilDelimiterOrEof(&buf, '\n')) |line| {
+        _ = line;
+        lines += 1;
+    }
+
+    std.debug.print("{d}\n", .{lines});
+}
+
+fn r3() anyerror!void {
+    const allocator = std.heap.page_allocator;
+
+    // Open a file for reading
+    var file = try std.fs.cwd().openFile("../input.txt", .{});
+
+    // Read the entire contents into a buffer
+    var contents = try file.readToEndAlloc(allocator, std.math.maxInt(usize));
+
+    // Split the contents into lines
+    const content = std.mem.split(u8, &contents, "\n");
+
+    var lines: usize = 0;
+
+    // Iterate over lines
+    for (content) |_| {
+        lines += 1;
+    }
+
+    // Clean up
+    allocator.free(contents);
+}
+
+pub fn main() !void {
+    try r3();
 }
