@@ -20,6 +20,7 @@ type Game struct {
 	PlayerPosition Vector
 	AttackTimer    *engine.Timer
 	Player         *Player
+	Meteors        []*Meteor
 }
 
 func (g *Game) Update() error {
