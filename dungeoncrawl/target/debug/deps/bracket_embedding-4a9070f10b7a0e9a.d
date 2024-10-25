@@ -1,0 +1,8 @@
+/Users/cmartinconi/repos/code/dungeoncrawl/target/debug/deps/libbracket_embedding-4a9070f10b7a0e9a.rmeta: /Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/lib.rs /Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/embedding.rs /Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/../resources/terminal8x8.png /Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/../resources/vga8x16.png
+
+/Users/cmartinconi/repos/code/dungeoncrawl/target/debug/deps/bracket_embedding-4a9070f10b7a0e9a.d: /Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/lib.rs /Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/embedding.rs /Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/../resources/terminal8x8.png /Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/../resources/vga8x16.png
+
+/Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/lib.rs:
+/Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/embedding.rs:
+/Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/../resources/terminal8x8.png:
+/Users/cmartinconi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bracket-embedding-0.8.7/src/../resources/vga8x16.png:
