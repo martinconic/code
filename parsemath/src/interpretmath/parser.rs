@@ -57,7 +57,7 @@ impl<'a> Parser<'a> {
     fn parse_number(&mut self) -> Result<Node, ParseError> {
         let token = self.current_token.clone();
         match token {
-            Token::Substract => {
+            Token::Subtract => {
                 self.get_next_token()?;
                 let expr = self.generate_ast(OperPrec::Negative)?;
                 Ok(Node::Negative(Box::new(expr)))
