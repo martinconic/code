@@ -40,7 +40,7 @@ impl PartialEq for Token {
         match (self, other) {
             (Token::Num(a), Token::Num(b)) => (a - b).abs() < f64::EPSILON, // Comparing floats with tolerance
             (Token::Add, Token::Add)
-            | (Token::Substract, Token::Substract)
+            | (Token::Subtract, Token::Subtract)
             | (Token::Multiply, Token::Multiply)
             | (Token::Divide, Token::Divide)
             | (Token::Caret, Token::Caret)
