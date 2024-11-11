@@ -1,7 +1,8 @@
 /target
+/fs/target
 read_file/zig/.zig-cache/
 read_file/zig/.zig-out/
 read_file/rust/readf/target/
 calc/rust/calc/target/
 dungeoncrawl/target/
-parsemath/target/
+/parsemath/target
